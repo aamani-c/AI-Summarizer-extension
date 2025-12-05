@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Summarizer Settings</title>
+    <link rel="stylesheet" href="options.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>⚙️ AI Summarizer Settings</h1>
+        </header>
+
+        <div class="content">
+            <div class="form-group">
+                <label for="apiKey">Gemini API Key:</label>
+                <input type="password" id="apiKey" placeholder="Enter your Gemini API Key">
+                <p class="help-text">
+                    Get your free API key from <a href="https://aistudio.google.com/apikey" target="_blank">Google AI Studio</a>
+                </p>
+            </div>
+
+            <div class="form-actions">
+                <button id="saveBtn" class="btn-primary">💾 Save Settings</button>
+                <button id="clearBtn" class="btn-danger">🗑️ Clear Key</button>
+            </div>
+
+            <div id="status" class="status hidden"></div>
+
+            <div class="info-box">
+                <h3>ℹ️ How to get your API Key:</h3>
+                <ol>
+                    <li>Visit <a href="https://aistudio.google.com/apikey" target="_blank">Google AI Studio</a></li>
+                    <li>Click "Create API Key"</li>
+                    <li>Select "Create API key in new Google Cloud project"</li>
+                    <li>Copy the generated API key</li>
+                    <li>Paste it in the field above and click "Save Settings"</li>
+                </ol>
+            </div>
+        </div>
+    </div>
+
+    <script src="options.js"></script>
+</body>
+</html>

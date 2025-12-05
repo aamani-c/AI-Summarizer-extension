@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Summarizer</title>
+    <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>📝 AI Summarizer</h1>
+            <button id="settingsBtn" class="settings-btn">⚙️ Settings</button>
+        </header>
+
+        <div class="content">
+            <!-- Summary Type Selection -->
+            <div class="form-group">
+                <label for="summaryType">Select Summary Type:</label>
+                <select id="summaryType">
+                    <option value="brief">Brief (50 words)</option>
+                    <option value="detailed">Detailed (150 words)</option>
+                    <option value="bullet">Bullet Points</option>
+                    <option value="mcq">Multiple Choice Questions (MCQ)</option>
+                </select>
+            </div>
+
+            <!-- Summarize Button -->
+            <button id="summarizeBtn" class="btn-primary">🚀 Summarize This Article</button>
+
+            <!-- Loading State -->
+            <div id="loading" class="loading hidden">
+                <div class="spinner"></div>
+                <p>Summarizing your article...</p>
+            </div>
+
+            <!-- Result Display -->
+            <div id="result" class="result hidden">
+                <h2>📋 Summary</h2>
+                <div id="resultContent" class="result-content"></div>
+                <button id="copyBtn" class="btn-secondary">📋 Copy to Clipboard</button>
+                <button id="newSummaryBtn" class="btn-secondary">✨ New Summary</button>
+            </div>
+
+            <!-- Error Message -->
+            <div id="error" class="error hidden">
+                <p id="errorMsg"></p>
+                <button id="closeErrorBtn" class="btn-secondary">Close</button>
+            </div>
+
+            <!-- No API Key Message -->
+            <div id="noApiKey" class="no-api-key hidden">
+                <p>⚠️ Gemini API key not configured!</p>
+                <p>Please add your API key in Settings.</p>
+                <button id="settingsBtn2" class="btn-primary">Go to Settings</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="popup.js"></script>
+</body>
+</html>
