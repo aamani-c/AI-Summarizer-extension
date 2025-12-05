@@ -5,7 +5,7 @@ A lightweight Chrome Extension that **instantly summarizes any article** using G
 Extract key information from web articles in multiple formats: Brief summaries, Detailed analysis, 
 Bullet points, and Auto-generated Multiple Choice Questions.
 
-** Features **
+**Features**
 
 - **AI-Powered Summarization** - Uses Google Gemini API
 - **Multiple Summary Types**:
@@ -19,7 +19,7 @@ Bullet points, and Auto-generated Multiple Choice Questions.
 - **Fast & Lightweight** - Minimal resource usage
 - **Beautiful UI** - Modern gradient design with smooth animations
 
-** Technologies Used**
+**Technologies Used**
 
 - **Frontend:** HTML5, CSS3, JavaScript
 - **APIs:** Google Gemini API (v1beta)
@@ -27,7 +27,7 @@ Bullet points, and Auto-generated Multiple Choice Questions.
 - **Storage:** Chrome Sync Storage
 - **Architecture:** Popup UI, Content Script, Background Service Worker
 
-**📥 Installation**
+**Installation**
 
 1. **Clone or download** this repository
 2. Open `chrome://extensions/` in Chrome
